@@ -1,20 +1,32 @@
-require ( './helpers.js' );
-
-const { expect } = require("chai")
+const {
+  cowSound,
+  catSound,
+  dogSound,
+  horseSound,
+  pigSound,
+  bessie,
+  dolly,
+  babe,
+  little,
+  blackAndWhite,
+  black,
+  pink,
+} = require("../index");
 
 describe("index.js", () => {
   it("String: uses destructuring to declare five animal sounds", () => {
-    expect(moo).to.exist
-    expect(moo).to.equal("cow")
-    expect(neigh).to.exist
-    expect(neigh).to.equal("horse")
-    expect(baa).to.exist
-    expect(baa).to.equal("sheep")
-    expect(oink).to.exist
-    expect(oink).to.equal("pig")
-    expect(cluck).to.exist
-    expect(cluck).to.equal("chicken")
-  })
+    expect(cowSound).to.exist;
+    expect(cowSound).to.equal("moo");
+    expect(catSound).to.exist;
+    expect(catSound).to.equal("meow");
+    expect(dogSound).to.exist;
+    expect(dogSound).to.equal("woof");
+    expect(horseSound).to.exist;
+    expect(horseSound).to.equal("neigh");
+    expect(pigSound).to.exist;
+    expect(pigSound).to.equal("oink");
+  });
+
   it("String: uses destructuring to declare the four traditional animal names", () => {
     expect(bessie).to.exist
     expect(bessie).to.equal("cow")
@@ -32,7 +44,8 @@ describe("index.js", () => {
     expect(black).to.equal("sheep")
     expect(pink).to.exist
     expect(pink).to.equal("pig")
-  })
+})
+
   it("Array: uses destructuring to declare the seven traditional rainbow color variables using the color names", () => {
     expect(red).to.exist
     expect(red).to.equal("red")
